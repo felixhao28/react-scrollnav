@@ -1,0 +1,40 @@
+#content-container {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.scroll-navbar-vertical {
+  position: fixed;
+  list-style-type: none;
+  padding: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroll-navbar-vertical a {
+  padding: 10px 10px 10px 10px;
+  word-wrap: break-word;
+  display: block;
+  background-color: grey;
+}
+
+.scroll-navbar-vertical a {
+  padding: 10px 10px 10px 10px;
+  word-wrap: break-word;
+  display: block;
+  background-color: grey;
+}
+
+.scroll-navbar-vertical a.active {
+  background-color: yellow;
+}
+
+.scroll-navbar-vertical a:first-child {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.scroll-navbar-vertical a:last-child {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}

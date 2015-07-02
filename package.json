@@ -1,0 +1,21 @@
+{
+  "name": "react-scrollnav",
+  "version": "1.0.0",
+  "description": "Scroll Navigation Bar for ReactJS",
+  "main": "dist/react-scrollnav.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Felix Hao",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-coffee-react": "^2.4.1",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-coffee": "^0.13.0",
+    "grunt-contrib-uglify": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-newer": "^1.1.1",
+    "load-grunt-tasks": "^3.2.0"
+  }
+}
