@@ -5,7 +5,8 @@ App = React.createClass
                     id: c.id
                     title: c.title
     <div>
-      <ScrollNav anchors={anchors} vertical/>
+      <ScrollNav anchors={anchors} fullsize smooth/>
+      <ScrollNav anchors={anchors} vertical centered/>
       <div id="content-container">
       {
         for c, i in contents

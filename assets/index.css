@@ -1,40 +1,76 @@
 #content-container {
   width: 200px;
   margin: 0 auto;
+  padding-top: 30px;
 }
 
-.scroll-navbar-vertical {
+.scroll-navbar {
   position: fixed;
+}
+
+.scroll-navbar.fullsize {
+  background-color: lightgrey;
+  padding: 10px 10px 10px 10px;
+}
+
+.scroll-navbar.vertical {
   list-style-type: none;
   padding: 0;
+}
+
+.scroll-navbar.vertical.centered {
   top: 50%;
   transform: translateY(-50%);
 }
 
-.scroll-navbar-vertical a {
+.scroll-navbar.vertical.fullsize {
+  top: 0;
+  bottom: 0;
+}
+
+.scroll-navbar.horizontal.centered {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-navbar.horizontal.fullsize {
+  left: 0;
+  right: 0;
+}
+
+.scroll-navbar a {
   padding: 10px 10px 10px 10px;
   word-wrap: break-word;
-  display: block;
+}
+
+.scroll-navbar a {
   background-color: grey;
 }
 
-.scroll-navbar-vertical a {
-  padding: 10px 10px 10px 10px;
-  word-wrap: break-word;
+.scroll-navbar.vertical a {
   display: block;
-  background-color: grey;
 }
 
-.scroll-navbar-vertical a.active {
+.scroll-navbar a.active {
   background-color: yellow;
 }
 
-.scroll-navbar-vertical a:first-child {
+.scroll-navbar.vertical:not(.fullsize) a:first-child {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 
-.scroll-navbar-vertical a:last-child {
+.scroll-navbar.vertical:not(.fullsize) a:last-child {
   border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.scroll-navbar.horizontal:not(.fullsize) a:first-child {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.scroll-navbar.horizontal:not(.fullsize) a:last-child {
+  border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }

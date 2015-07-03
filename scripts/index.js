@@ -12,7 +12,12 @@ App = React.createClass({
     });
     return React.createElement("div", null, React.createElement(ScrollNav, {
       "anchors": anchors,
-      "vertical": true
+      "fullsize": true,
+      "smooth": true
+    }), React.createElement(ScrollNav, {
+      "anchors": anchors,
+      "vertical": true,
+      "centered": true
     }), React.createElement("div", {
       "id": "content-container"
     }, (function() {
